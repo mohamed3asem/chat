@@ -1,24 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import "bootstrap/dist/css/bootstrap.min.css";
+import Chat from "./sections/chat/Chat";
 
+/**
+ * @links
+ * Figma https://www.figma.com/file/xm8H01V8ZWbfpF7zVZUbyE/MEAN-stack-interview?node-id=0%3A1&t=6GY8lmZ4LU9qjh0d-1
+ * Bootstrap with react https://react-bootstrap.netlify.app/
+ *
+ */
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Chat />
+    </>
   );
 }
 
