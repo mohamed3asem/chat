@@ -1,17 +1,15 @@
+import {useState} from 'react'
+
 import MessageFrom from "../../components/message-form/MessageForm";
-import TextMessage from "../../components/text-message/TextMessage";
+import {TextMessages} from "../../components/TextMessages";
 
 const Chat = () => {
+const [msgs, setMsgs] = useState([])
+
   return (
     <section className="fixed-bottom my-5 mx-3">
-      <div>
-        <TextMessage />
-        <TextMessage />
-        <TextMessage />
-        <TextMessage />
-        <TextMessage />
-      </div>
-      <MessageFrom />
+      <TextMessages msgs={msgs}/>
+      <MessageFrom setMsgs={setMsgs}/>
     </section>
   );
 };
